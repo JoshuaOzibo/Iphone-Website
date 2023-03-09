@@ -1,0 +1,1109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clr{
+    clear: both;
+}
+body{
+    background: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.welcome{
+    width: 100%;
+    height: 30px;
+    background: red;
+}
+
+.container-1{
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    background: url(/image/3tan-Mi5tb_R1zzw-unsplash.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    overflow: hidden;
+}
+
+@media(max-width: 750px){
+    .container-1 nav ul{
+        width: 100%;
+        height: 830px;
+        z-index: 2;
+    }
+    
+    .container-1 nav ul li{
+        background: #000;
+        width: 100px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-left: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .container-1 nav ul li:hover{
+        border-bottom: none;
+    }
+    
+    .container-1{
+        position: relative;
+        width: 100%;
+        background: url(/image/3tan-Mi5tb_R1zzw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    }
+    nav .left h3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-left: 76%;
+        z-index: 3;
+    }
+
+    nav ul{
+        width: 100%;
+        padding-top: 230px;
+        height: 400px;
+        background: gray;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 300px;
+        right: -10%;
+        clip-path: circle(100px at 150% -30%);
+        -webkit-clip-path: (100px at 150% -20%);
+        transition: all 1.5s ease-out;
+        color: #000;
+    }
+    ul.open{
+        clip-path: circle(1550px at 150% -20%);
+        -webkit-clip-path: (1550px at 150% -20%);
+    }
+    .lines{
+        position: absolute;
+        width: 45px;
+        height: 35px;
+        background: #000;
+        right: 10%;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .line{
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        margin: 5px;
+    }
+}
+.container-1 nav{
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.center{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    cursor: pointer;
+}
+.center h1{
+    text-align: center;
+}
+.center p{
+    width: 67%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.container-1 .left{
+    margin-left: -5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.container-1 .left h3{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container-1 ul{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10%;
+    list-style: none;
+}
+.container-1 ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    color: #fff;
+}
+.container-1 ul li{
+    padding-left: 12px;
+}
+.container-1 ul li:hover{
+    border-bottom: 2px solid #fff;
+}
+.container-1 ul li a:hover{
+    font-size: 16px;
+}
+.container-2{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    background: #000;
+    margin-top: 20px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+.container-2 .boxes{
+    display: flex;
+    background: gray;
+    justify-content: center;
+}
+.container-2 .boxes .box{
+    width: 300px;
+    height: 350px;
+    background: #000;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.i13box-left1{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease;
+}
+.i13-boxleft-Anim{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.i13promaxbox-right3{
+    width: 300px;
+    height: 350px;
+    background: #000;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+}
+.i13promaxbox-right-Anim{
+    opacity: 1;
+    transform: translateX(1px);
+}
+.i13box-center{
+    width: 300px;
+    height: 350px;
+    background: #000;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.4);
+    transition: all 1s ease;
+}
+.i13box-center-Anim{
+    opacity: 1;
+    transform: scale(1);
+}
+.container-2 .boxes .box img{
+    width: 97%;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.container-2 .boxes .box h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container-2 .boxes .box .img-text-1{
+    position: absolute;
+    margin-top: -230px;
+    width: 100%;
+    color: #fff;
+}
+
+@media(max-width: 750px){
+    .container-2{
+        height: 1280px;
+    }
+    .container-2 .boxes{
+        padding-bottom: 20px;
+    }
+    .center h1{
+        color: #fff;
+    }
+    .container-2 .boxes .box img{
+        padding-top: 5px;
+        height: 350px;
+    }
+    .container-2 .boxes .box{
+        margin: auto;
+        width: 70%;
+        height: 400px;
+    }
+    .container-2 .boxes{
+        display: block;
+        margin-top: 10px;
+        height: 1250px;
+    }
+    .container-2 .boxes .box .img-text-1{
+        width: 100%;
+    }
+    .container-2 .boxes .box .img-text-1 h2, p{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+}
+.container-3{
+    width: 100%;
+    height: 1277px;
+    background: #000;
+    color: #fff;
+    z-index: 2;
+    overflow: hidden;
+}
+.container-3 h2{
+    text-align: center;
+    padding-top: 10px;
+}
+.h2{
+    opacity: 0;
+    transform: translateX(-600px);
+    transition: all 1s ease;
+}
+.Anim-h2{
+    opacity: 1;
+    transform: translateX(1px);
+}
+.Anim-h2-right{
+    opacity: 1;
+    transform: translateX(600px);
+    color: red;
+}
+.i-13{
+    width: 100%;
+    height: 400px;
+    background: black;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.i-left-13{
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    margin-right: 40px;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1s ease-out;
+}
+.i-13left-anim{
+    opacity: 1;
+    transform: scale(1);
+}
+.i-right-13{
+    width: 40%;
+    height: 380px;
+    margin-left: 40px;
+    background: url(/image/iPhone\ 13\ cameral-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250%;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+.i-13right-anim{
+    opacity: 1;
+    transform: translateX(0px);
+}
+@media(max-width: 750px){
+    .container-3{
+        height: 1500px;
+        width: 100%;
+    }
+    .i-13{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+    }
+    .i-left-13{
+        margin-top: -10px;
+        width: 80%;
+        margin: auto;
+    }
+    .i-right-13{
+        margin-top: 60px;
+        width: 60%;
+        margin: auto;
+        background: url(/image/iPhone\ 13\ cameral-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 350%;
+    }
+}
+
+.i-13p{
+    width: 100%;
+    height: 400px;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.i-right-13p{
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 40px;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1s ease-out;
+}
+.i-right-13p-Anim{
+    opacity: 1;
+    transform: scale(1);
+}
+.i-left-13p{
+    width: 40%;
+    height: 380px;
+    border: 1px solid black;
+    margin-right: 40px;
+    background: url(/image/apple_iphone_13_pro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+.i-left-13p-Anim{
+    opacity: 1;
+    transform: translateX(0px);
+}
+@media(max-width: 750px){
+    .container-3{
+        height: 1800px;
+        width: 100%;
+    }
+    .i-13p{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+    }
+    .i-left-13p{
+        width: 60%;
+        margin: auto;
+        order: 2;
+    }
+    .i-right-13p{
+        margin-top: -530px;
+        width: 80%;
+        margin: auto;
+        order: 1;
+    }
+}
+
+.i-13pm{
+    width: 100%;
+    height: 400px;
+    background: black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+.i-left-13pm{
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    margin-right: 40px;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1s ease-out;
+}
+.i-13pm-Anim{
+    opacity: 1;
+    transform: scale(1);
+}
+.i-right-13pm{
+    width: 40%;
+    height: 385px;
+    border: 1px solid black;
+    margin-left: 40px;
+    background: url(/image/promax\ cam.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160%;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+.i-right-13pm-Anim{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+@media(max-width: 750px){
+    .container-3{
+        height: 1877px;
+        width: 100%;
+    }
+    .i-13pm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+    }
+    .i-left-13pm{
+        margin-top: -10px;
+        width: 80%;
+        margin: auto;
+    }
+    .i-right-13pm{
+        margin-top: 60px;
+        width: 60%;
+        margin: auto;
+        background: url(/image/promax\ cam.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    }
+}
+.center-img{
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    margin-top: 200px;
+    overflow: hidden;
+}
+.center-img .images{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    transition: all 0.5s ease-out;
+}
+.images img{
+    height: 100%;
+}
+.button{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+}
+.button a{
+    width: 150px;
+    height: 11px;
+    margin: 3px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.button a:hover{
+    background: #fff;
+}
+
+.footer{
+    width: 100%;
+    height: 250px;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+.footer-center{
+    width: 90%;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    color: #fff;
+}
+.links{
+    display: flex;
+}
+.teams h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#apple-icon{
+    color: #fff;
+    font-size: 35px;
+    margin-right: 5px;
+}
+.teams{
+    width: 18%;
+    background: #000;
+    margin: 5px;
+}
+.linkin{
+    margin-top: 30px;
+    margin-left: -22px;
+    background: #000;
+}
+.linkin a{
+    margin-right: 5px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.linkin a:hover{
+    color: red;
+    padding-top: -20px;
+    font-size: 23px;
+}
+@media(max-width: 750px){
+    .footer{
+        width: 100%;
+        height: 700px;
+    }
+    .footer-center{
+        flex-direction: column;
+        background: black;
+        display: flex;
+        align-items: center;
+        height: 650px;
+        text-align: center;
+    }
+    .teams{
+        width: 50%;
+        text-align: center;
+    }
+    #apple-icon{
+        font-size: 40px;
+        margin-right: 0px;
+    }
+    .linkin a{
+        font-size: 25px;
+        color: #fff;
+    }
+    .linkin{
+        margin-top: -50px;
+        width: 200px;
+        bottom: 1%;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        transform: translate(-30%, -10%);
+        background: #000;
+    }
+    .white-line{
+        display: none;
+    }
+        
+}
+.white-line{
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    bottom: 0%;
+    bottom: 10%;
+}
+
+.support-container-1{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url(/image/3tan-Mi5tb_R1zzw-unsplash.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    overflow: hidden;
+}
+
+@media(max-width: 750px){
+    .support-container-1 nav ul{
+        width: 100%;
+        height: 830px;
+        z-index: 2;
+    }
+    .support-container-1 nav ul li:hover{
+        border: none;
+    }
+    .support-container-1 nav ul li{
+        background: #000;
+        width: 100px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-left: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .support-container-1{
+        position: relative;
+        width: 100%;
+        background: url(/image/3tan-Mi5tb_R1zzw-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    nav .left h3{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-left: 76%;
+        z-index: 3;
+    }
+
+    .support-container-1 ul{
+        width: 100%;
+        padding-top: 230px;
+        height: 400px;
+        background: gray;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 300px;
+        right: -10%;
+        clip-path: circle(100px at 150% -20%);
+        -webkit-clip-path: (100px at 150% -20%);
+        transition: all 1.5s ease-out;
+    }
+    ul.open{
+        clip-path: circle(1550px at 150% -20%);
+        -webkit-clip-path: (1550px at 150% -20%);
+    }
+    .lines{
+        position: absolute;
+        width: 45px;
+        height: 35px;
+        background: #000;
+        right: 10%;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .line{
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        margin: 5px;
+    }
+}
+.support-container-1 nav{
+    width: 90%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.center{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+.center h1{
+    text-align: center;
+}
+.center p{
+    width: 67%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.support-container-1 .left{
+    margin-left: -5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.support-container-1 .left h3{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.support-container-1 ul{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10%;
+    list-style: none;
+}
+.support-container-1 ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    color: #fff;
+}
+.support-container-1 ul li{
+    padding-left: 12px;
+}
+.support-container-1 ul li:hover{
+    border-bottom: 2px solid #fff;
+}
+.support-container-1 ul li a:hover{
+    font-size: 16px;
+}
+.support-container-2{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    background: red;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+@media(max-width: 750px){
+    .support-bar{
+        height: 300px;
+        align-items: center;
+    }
+    .support-bar-center{
+        flex-direction: column;
+        height: 400px;
+        display: flex;
+    }
+}
+.support-bar{
+    width: 100%;
+    height: 300px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+.support-bar-center{
+    width: 70%;
+    height: 300px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.support-list i{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.support-list a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.support-list a:hover , i:hover{
+    color: gray;
+    cursor: pointer;
+}
+.support-list{
+    width: 140px;
+    text-align: center;
+}
+.support-list1{
+    transform: translateY(50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.support-list2{
+    transform: translateY(50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.support-list3{
+    transform: translateY(50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.support-list1Anim{
+    transform: translateY(0px);
+    opacity: 2;
+}
+.search{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    margin-top: 10px;
+}
+.center-search{
+    width: 70%;
+    height: 90px;
+    display: block;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+.center-search label{
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.center-search input{
+    width: 80%;
+    height: 35px;
+}
+
+@media(max-width: 750px){
+    .center-my-support{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0px;
+    }
+    .rightmysupport{
+        width: 60%;
+        height: 0px;
+        float: right;
+        border: 1px solid black;
+    }
+    .my-support{
+        width: 100%;
+        height: 500px;
+    }
+    .leftmysupport h2{
+        text-align: center;
+        margin-top: -10px;
+    }
+}
+.my-support{
+    width: 100%;
+    height: 500px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-my-support{
+    width: 80%;
+    height: 400px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftmysupport a{
+    text-decoration: none;
+    color: rgb(196, 39, 249);
+}
+.leftmysupport{
+    width: 40%;
+    float: left;
+    padding-top: 10px;
+    transform: translateX(-85px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.leftmysupportAnim{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.rightmysupport{
+    width: 50%;
+    height: 390px;
+    float: right;
+    border: 1px solid #fff;
+    background: url(/image/featured-section-my-support_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: 5;
+}
+.rightmysupport h3{
+    color: #fff;
+    text-align: center;
+    margin-top: 170px;
+    font-size: 60px;
+    z-index: 5;
+}
+.color{
+    color: rgb(175, 165, 165);
+}
+.repair{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+}
+.center-repair p span{
+    color: rgb(31, 155, 244);
+}
+.center-repair h1{
+    font-size: 30px;
+}
+.center-repair i{
+    font-size: 50px;
+    color: #fff;
+}
+.center-repair{
+    width: 80%;
+    text-align: center;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.center-repairAnim{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.repair-2{
+    width: 100%;
+    height: 320px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-repair2{
+    width: 80%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.center-repair2Anim{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.p2{
+    margin-top: 20px;
+}
+
+.support-footer{
+    width: 100%;
+    height: 250px;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.support-footer-center{
+    width: 90%;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    color: #fff;
+}
+
+@media(max-width: 750px){
+    .support-footer{
+        width: 100%;
+        height: 700px;
+    }
+    .support-footer-center{
+        flex-direction: column;
+        background: black;
+        display: flex;
+        align-items: center;
+        height: 650px;
+        text-align: center;
+    }
+    #main-height{
+        max-height: 0px;
+    }
+}
+#main-height{
+    max-height: 0px;
+
+}
+
+.nav-stick{
+    background: rgba(16, 1, 40, 0.500);
+    transition: all 0.5s ease-out;
+}
+#all-nav{
+    position: fixed;
+    z-index: 10;
+}
+.nav-fix{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
